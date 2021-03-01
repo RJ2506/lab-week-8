@@ -1,0 +1,42 @@
+
+html {
+    background-color: #e5dada
+
+}
+h1,h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #02040f
+    
+}
+
+p {
+    font-family: 'Noto Serif', serif;
+    
+}
+
+nav {
+    background-color: #002642;
+    padding: 20px;
+    position: sticky;
+    top: 10px;
+    }
+.container ol {
+    list-style-type: none;
+    padding: 20px;
+    background-color: #e59500;
+    
+}
+
+.box {
+    display: inline-block;
+}
+
+
+.float_box {
+    float: left;
+    margin: 0;
+       
+}
+img {
+    width: 200px;
+}
