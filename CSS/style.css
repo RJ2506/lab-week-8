@@ -1,12 +1,12 @@
 
 html {
-    background-color: #e5dada
+    background-color: #6e8783;
 
 }
-h1,h2 {
+h1 {
     font-family: 'Raleway', sans-serif;
-    color: #02040f
-    
+    color: #d8504a;
+    margin: 0;
 }
 
 p {
@@ -14,29 +14,62 @@ p {
     
 }
 
-nav {
-    background-color: #002642;
-    padding: 20px;
-    position: sticky;
-    top: 10px;
-    }
-.container ol {
-    list-style-type: none;
-    padding: 20px;
-    background-color: #e59500;
+
+img {
+    width: 200px;
+}
+
+ol {
+    padding: 1rem;
+}
+.box ol {
+    list-style: none;
+    background-color: #e5e5dc;
+    display: flex;
+    flex-direction: row;
+}
+    
+
+.item {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #334259 ;
     
 }
 
-.box {
-    display: inline-block;
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'sidebar content content'
+        'footer footer footer';
+    gap: 5px;
+    width: 1000px;
+}
+
+.header {
+    grid-area: header;
+    background: #edddd0;
 }
 
 
-.float_box {
-    float: left;
+.footer {
+    grid-area: footer;
+    background-color: #edddd0;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #e5e5dc;
+}
+
+.content {
+    grid-area: content;
+    background-color: #edddd0;
     margin: 0;
-       
 }
-img {
-    width: 200px;
+
+div > ol {
+    background: #e5e5dc;
+    margin: 0;
 }
